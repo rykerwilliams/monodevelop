@@ -30,17 +30,17 @@ namespace MonoDevelop.Ide.Gui
 {
 	static class Styles
 	{
-		public static readonly Cairo.Color BaseBackgroundColor = new Cairo.Color (1, 1, 1);
-		public static readonly Cairo.Color BaseForegroundColor = new Cairo.Color (0, 0, 0);
+		public static readonly Cairo.Color BaseBackgroundColor = new Cairo.Color (0, 0, 0);
+		public static readonly Cairo.Color BaseForegroundColor = new Cairo.Color (1, 1, 1);
 
 		// General
 
-		public static readonly Gdk.Color ThinSplitterColor = new Gdk.Color (166, 166, 166);
+		public static readonly Gdk.Color ThinSplitterColor = new Gdk.Color (31, 31, 31);
 
 		// Document tab bar
 
 
-		public static readonly Cairo.Color TabBarBackgroundColor = CairoExtensions.ParseColor ("c2c2c2");
+		public static readonly Cairo.Color TabBarBackgroundColor = CairoExtensions.ParseColor ("2e2d2d");
 		public static readonly Cairo.Color TabBarActiveTextColor = new Cairo.Color (0, 0, 0);
 
 		public static readonly Cairo.Color TabBarActiveGradientStartColor = Shift (TabBarBackgroundColor, 0.92);
@@ -52,7 +52,7 @@ namespace MonoDevelop.Ide.Gui
 		public static readonly Cairo.Color TabBarInactiveTextColor = Blend (new Cairo.Color (0, 0, 0), TabBarGradientStartColor, 0.4);
 		public static readonly Cairo.Color TabBarHoverInactiveTextColor = new Cairo.Color (0, 0, 0);
 
-		public static readonly Cairo.Color BreadcrumbGradientStartColor = CairoExtensions.ParseColor ("FFFFFF");
+		public static readonly Cairo.Color BreadcrumbGradientStartColor = CairoExtensions.ParseColor ("484444");
 		public static readonly Cairo.Color BreadcrumbBackgroundColor = Shift (BreadcrumbGradientStartColor, .95);
 		public static readonly Cairo.Color BreadcrumbGradientEndColor = Shift (BreadcrumbGradientStartColor, 0.9);
 		public static readonly Cairo.Color BreadcrumbBorderColor = Shift (BreadcrumbBackgroundColor, 0.6);
@@ -66,19 +66,19 @@ namespace MonoDevelop.Ide.Gui
 
 		// Dock pads
 		
-		public static readonly Cairo.Color DockTabBarGradientTop = new Cairo.Color (248d / 255d, 248d / 255d, 248d / 255d);
-		public static readonly Cairo.Color DockTabBarGradientStart = new Cairo.Color (242d / 255d, 242d / 255d, 242d / 255d);
-		public static readonly Cairo.Color DockTabBarGradientEnd = new Cairo.Color (230d / 255d, 230d / 255d, 230d / 255d);
-		public static readonly Cairo.Color DockTabBarShadowGradientStart = new Cairo.Color (154d / 255d, 154d / 255d, 154d / 255d, 1);
-		public static readonly Cairo.Color DockTabBarShadowGradientEnd = new Cairo.Color (154d / 255d, 154d / 255d, 154d / 255d, 0);
+		public static readonly Cairo.Color DockTabBarGradientTop = new Cairo.Color (45d / 255d, 44d / 255d, 44d / 255d);
+		public static readonly Cairo.Color DockTabBarGradientStart = new Cairo.Color (39d / 255d, 38d / 255d, 38d / 255d);
+		public static readonly Cairo.Color DockTabBarGradientEnd = new Cairo.Color (27d / 255d, 26d / 255d, 26d / 255d);
+		public static readonly Cairo.Color DockTabBarShadowGradientStart = new Cairo.Color (22d / 255d, 21d / 255d, 21d / 255d, 1);
+		public static readonly Cairo.Color DockTabBarShadowGradientEnd = new Cairo.Color (22d / 255d, 21d / 255d, 21d / 255d, 0);
 
-		public static readonly Gdk.Color PadBackground = new Gdk.Color (240, 240, 240);
+		public static readonly Gdk.Color PadBackground = new Gdk.Color (24, 24, 24);
 		public static readonly Gdk.Color InactivePadBackground = ReduceLight (PadBackground, 0.9);
 		public static readonly Gdk.Color PadLabelColor = new Gdk.Color (92, 99, 102);
-		public static readonly Gdk.Color DockFrameBackground = new Gdk.Color (157, 162, 166);
+		public static readonly Gdk.Color DockFrameBackground = new Gdk.Color (38, 38, 38);
 		public static readonly Gdk.Color DockSeparatorColor = ThinSplitterColor;
 
-		public static readonly Gdk.Color BrowserPadBackground = new Gdk.Color (225, 228, 232);
+		public static readonly Gdk.Color BrowserPadBackground = new Gdk.Color (22, 22, 23);
 		public static readonly Gdk.Color InactiveBrowserPadBackground = new Gdk.Color (240, 240, 240);
 
 		public static readonly Cairo.Color DockBarBackground1 = PadBackground.ToCairoColor ();
